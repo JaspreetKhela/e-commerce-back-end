@@ -1,0 +1,25 @@
+{
+  "name": "e-commerce-back-end",
+  "version": "1.0.0",
+  "description": "This is the back-end for an e-commerce application.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaspreetKhela/e-commerce-back-end.git"
+  },
+  "author": "Jaspreet Khela",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JaspreetKhela/e-commerce-back-end/issues"
+  },
+  "homepage": "https://github.com/JaspreetKhela/e-commerce-back-end#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5"
+  }
+}
