@@ -1,5 +1,7 @@
+// Import the ProductTag model
 const { ProductTag } = require('../models');
 
+// Create the product tags seed data
 const productTagData = [
   {
     product_id: 1,
@@ -51,6 +53,8 @@ const productTagData = [
   },
 ];
 
+// Bulk the product tags seed data
 const seedProductTags = () => ProductTag.bulkCreate(productTagData);
 
+// Export the product tags seed data
 module.exports = seedProductTags;

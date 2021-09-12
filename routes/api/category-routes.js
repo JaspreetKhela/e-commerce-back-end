@@ -101,6 +101,7 @@ router.put('/:id', (req, res) => {
 });
 
 // Delete a category in the database with the provided ID
+// Note: A category must be empty before it can be deleted i.e. it cannot have any products in it 
 router.delete('/:id', (req, res) => {
   Category.destroy({
     // Find data with the provided ID
@@ -125,5 +126,5 @@ router.delete('/:id', (req, res) => {
     });
 });
 
-// Export router
+// Export the router
 module.exports = router;

@@ -1,5 +1,5 @@
 // Create an instance of an Express.js router
-const router = require('express.js').Router();
+const router = require('express').Router();
 
 // Import the category routes
 const categoryRoutes = require('./category-routes.js');
@@ -15,5 +15,5 @@ router.use('/categories', categoryRoutes);
 router.use('/products', productRoutes);
 router.use('/tags', tagRoutes);
 
-// Export router
+// Export the router
 module.exports = router;

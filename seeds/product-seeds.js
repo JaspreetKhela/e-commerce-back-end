@@ -1,5 +1,7 @@
+// Import the Product model
 const { Product } = require('../models');
 
+// Create the products seed data
 const productData = [
   {
     product_name: 'Plain T-Shirt',
@@ -33,6 +35,8 @@ const productData = [
   },
 ];
 
+// Bulk the products seed data
 const seedProducts = () => Product.bulkCreate(productData);
 
+// Export the products seed data
 module.exports = seedProducts;

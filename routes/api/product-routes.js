@@ -17,6 +17,7 @@ router.get('/', (req, res) => {
       },
       {
         model: Tag,
+        as: "product_tag",
         attributes: ["id", "tag_name"]
       }
     ]
@@ -46,6 +47,7 @@ router.get('/:id', (req, res) => {
       },
       {
         model: Tag,
+        as: "product_tag",
         attributes: ["id", "tag_name"]
       }
     ]
@@ -71,13 +73,18 @@ router.get('/:id', (req, res) => {
 router.post('/', (req, res) => {
   /* req.body should look like this...
     {
-      product_name: "Basketball",
-      price: 200.00,
-      stock: 3,
-      tagIds: [1, 2, 3, 4]
+      "product_name": "Basketball",
+      "price": 200.00,
+      "stock": 3,
+      "tagIds": [1, 2, 3, 4]
     }
   */
-  Product.create(req.body)
+  Product.create({
+    product_name: req.body.product_name,
+    price: req.body.price,
+    stock: req.body.stock,
+    tagIds: req.body.tagIds
+  })
     .then((product) => {
       // If there are product tags, we need to create pairings to bulk create in the ProductTag model
       if (req.body.tagIds.length) {
@@ -100,7 +107,7 @@ router.post('/', (req, res) => {
     });
 });
 
-// Update then return a product in the database with a provided ID
+// Update a product's tags then return the product in the database with a provided ID
 router.put('/:id', (req, res) => {
   Product.update(req.body, {
     // Find data with the provided ID
