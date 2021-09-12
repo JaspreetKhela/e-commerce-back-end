@@ -24,7 +24,7 @@
 3. Download npm dependencies by typing `npm install` in your Command Line Interface. This application uses the express, mysql2, sequelize, and dotenv npm packages.
 
 ### Usage
-To use this application, navigate to the root folder in the cloned repository's directory and simply type `npm start` into the Command Line Interface to start the server.
+To seed the application, navigate the the seeds folder and type `node index.js` in the Command Line Interface. To use this application, navigate to the root folder in the cloned repository's directory and simply type `npm start` into the Command Line Interface to start the server.
 
 **Screenshots**:
 
