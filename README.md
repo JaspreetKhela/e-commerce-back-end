@@ -5,7 +5,8 @@
 
 **Deployment Link**: Please see [installation](#installation) instructions below.
 
-**Video Tutorial Links**: 
+**Video Tutorial Links**:
+- https://drive.google.com/file/d/1eocwITwl9oMSVe30VIxrtp_3PXDpIy9U/view
 
 ## Table of Contents
 * [Installation](#installation)
