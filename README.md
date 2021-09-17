@@ -45,7 +45,7 @@ To seed the application, navigate the the seeds folder and type `node index.js` 
 <img width="1440" alt="Screen Shot 2021-09-13 at 12 39 58 AM" src="https://user-images.githubusercontent.com/80941606/133025130-fd4c26be-d9d7-433a-b95a-df53c7268ee7.png">
 
 ### Features
-This application allows for CRUD operations on a database through API endpoints.
+This application allows for CRUD operations on a categories, products, and tags stored in a database through API endpoints.
 
 ### Testing
 This application can be directly tested in [Insomnia](https://insomnia.rest/download).
